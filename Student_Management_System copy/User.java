@@ -15,6 +15,9 @@
 *************************************************************************/
 public class User {
 
+	// CourseTitle, EnrolledStudents, ...
+
+	// ID, UserName, Password, userType 
 	private String name;
 	private String id;
 	
@@ -22,7 +25,22 @@ public class User {
 		this.name = name;
 		this.id = id;
 	}
-	
+	/** File Handling */
+	public boolean checkUniqueID() {
+		return false;
+	}
+
+	public boolean getID() {
+		return false;
+	}
+
+	public void setID() {
+
+	}
+
+
+
+	/**	User Details */
 	public String toString()
 	{
 		return ("Name: " + name + ", Id: " + id);
@@ -36,15 +54,34 @@ public class User {
 		return id;
 	}
 
+	/** COURSE SECTION */
+	public String getCourseTitle() {
+		return title;
+	}
+
+	public boolean courseExist() {
+		return false;
+	}
+
+
+
+
+
 }
 
 public class Student extends User {
-
+	
+	public void addInCourse() {
+		
+	}
 
 }
 
 
 public class Admin extends User {
+	
+	public void createCourse() {
 
+	}
 
 }
