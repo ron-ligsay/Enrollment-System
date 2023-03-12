@@ -18,36 +18,47 @@ import java.util.ArrayList;
 public class Course {
 
 	private String title;
-	private ArrayList<Student> students = new ArrayList<Student>();
+	private ArrayList<User> user = new ArrayList<User>();
 	
-	public void addStudent(Student aStudent)
+	public void adduser(User aUser)
 	{
-		students.add(aStudent);
+		User.add(aUser);
 	}
 	
-	public String printDetails()
-	{
+	/* public String printDetails() {
 		String details = "";
 		
 		details += "Course name: '"+ title + "' has the following students:" +"\n";
 		
-		if(students.isEmpty()) {
+		if(user.isEmpty()) {
 			details = "This course has no students enrolled.";
 		}else {
-			for(Student student: students)
-				details += student +"\n";
+			for(User user: user)
+				details += user +"\n";
 			details += "----------------------------------------------------------------------------------------------------------------------";
 		}
 		return details;
-	}
+	} */
 	
 	public Course(String title) 
 	{
 		this.title = title;
 	}
 	
-	public String getTitle()
-	{
+	
+	public String getCourseTitle() {
 		return title;
 	}
+
+	public boolean CourseExist() {
+		return false;
+	}
+
+	public void createCourse() {
+
+	}
+
+	public void addInCourse() {
+	}
+
 }

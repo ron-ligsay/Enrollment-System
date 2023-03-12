@@ -13,12 +13,12 @@
 	See the License for the specific language governing permissions and 
 	limitations under the License.
 *************************************************************************/
-public class Student {
+public class User {
 
 	private String name;
 	private String id;
 	
-	public Student(String name, String id) {
+	public User(String name, String id) {
 		this.name = name;
 		this.id = id;
 	}
@@ -35,4 +35,16 @@ public class Student {
 	public String getId() {
 		return id;
 	}
+
+}
+
+public class Student extends User {
+
+
+}
+
+
+public class Admin extends User {
+
+
 }
